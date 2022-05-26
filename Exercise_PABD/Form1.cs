@@ -31,5 +31,21 @@ namespace Exercise_PABD
         {
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (textUsername.Text == "User" && textPassword.Text == "user")
+            {
+                new Form2().Show();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("Please check your username and password");
+                textUsername.Clear();
+                textPassword.Clear();
+                textUsername.Clear();
+            }
+        }
     }
 }

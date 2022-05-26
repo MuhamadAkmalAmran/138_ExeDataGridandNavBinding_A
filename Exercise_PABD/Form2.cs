@@ -16,5 +16,20 @@ namespace Exercise_PABD
         {
             InitializeComponent();
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            new Form3().Show();
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            new Form4().Show();
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            new Form1().Show();
+        }
     }
 }
