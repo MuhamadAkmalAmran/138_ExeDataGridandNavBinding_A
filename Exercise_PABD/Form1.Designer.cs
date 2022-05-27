@@ -51,7 +51,7 @@ namespace Exercise_PABD
             this.label1.Font = new System.Drawing.Font("Bebas Neue", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(164, 49);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(161, 34);
+            this.label1.Size = new System.Drawing.Size(163, 36);
             this.label1.TabIndex = 0;
             this.label1.Text = "DATA MAHASISWA";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -107,6 +107,7 @@ namespace Exercise_PABD
             this.button1.TabIndex = 8;
             this.button1.Text = "EXIT";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -126,7 +127,7 @@ namespace Exercise_PABD
             this.label4.Font = new System.Drawing.Font("Bebas Neue", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(177, 97);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(125, 34);
+            this.label4.Size = new System.Drawing.Size(126, 36);
             this.label4.TabIndex = 10;
             this.label4.Text = "Prodi TI UMY";
             // 
@@ -158,6 +159,7 @@ namespace Exercise_PABD
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.TransparencyKey = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

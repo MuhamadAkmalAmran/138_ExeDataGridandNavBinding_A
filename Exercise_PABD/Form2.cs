@@ -20,16 +20,18 @@ namespace Exercise_PABD
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             new Form3().Show();
+            this.Hide();
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-            new Form4().Show();
+            new Form4().ShowDialog();
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
             new Form1().Show();
+            this.Close();
         }
     }
 }

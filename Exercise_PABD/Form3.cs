@@ -27,6 +27,18 @@ namespace Exercise_PABD
         private void pictureBox2_Click(object sender, EventArgs e)
         {
             new Form2().Show();
+            this.Close();
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+                Form5 detail = new Form5();
+                detail.label6.Text = this.dataGridView1.CurrentRow.Cells[0].Value.ToString();
+                detail.label7.Text = this.dataGridView1.CurrentRow.Cells[1].Value.ToString();
+                detail.label8.Text = this.dataGridView1.CurrentRow.Cells[2].Value.ToString();
+                detail.label9.Text = this.dataGridView1.CurrentRow.Cells[3].Value.ToString();
+                detail.label10.Text = this.dataGridView1.CurrentRow.Cells[4].Value.ToString();
+                detail.ShowDialog();
         }
     }
 }

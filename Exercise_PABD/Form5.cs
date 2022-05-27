@@ -19,7 +19,7 @@ namespace Exercise_PABD
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-            new Form3().Show();
+            this.Close();
         }
     }
 }

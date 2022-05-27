@@ -30,29 +30,29 @@ namespace Exercise_PABD
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form3));
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.label2 = new System.Windows.Forms.Label();
-            this.mahasiswaBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.prodiTIDataSet = new Exercise_PABD.ProdiTIDataSet();
-            this.mahasiswaTableAdapter = new Exercise_PABD.ProdiTIDataSetTableAdapters.MahasiswaTableAdapter();
-            this.mahasiswaBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.nIMDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.namaMhsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.alamatMhsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.sexDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.phoneMhsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.mahasiswaBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.prodiTIDataSet = new Exercise_PABD.ProdiTIDataSet();
+            this.label2 = new System.Windows.Forms.Label();
+            this.mahasiswaBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.mahasiswaTableAdapter = new Exercise_PABD.ProdiTIDataSetTableAdapters.MahasiswaTableAdapter();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mahasiswaBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.prodiTIDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mahasiswaBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.prodiTIDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mahasiswaBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -74,6 +74,72 @@ namespace Exercise_PABD
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(759, 208);
             this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // nIMDataGridViewTextBoxColumn
+            // 
+            this.nIMDataGridViewTextBoxColumn.DataPropertyName = "NIM";
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.Black;
+            this.nIMDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle6;
+            this.nIMDataGridViewTextBoxColumn.HeaderText = "No. Mahasiswa";
+            this.nIMDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.nIMDataGridViewTextBoxColumn.Name = "nIMDataGridViewTextBoxColumn";
+            this.nIMDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // namaMhsDataGridViewTextBoxColumn
+            // 
+            this.namaMhsDataGridViewTextBoxColumn.DataPropertyName = "NamaMhs";
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.Black;
+            this.namaMhsDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle7;
+            this.namaMhsDataGridViewTextBoxColumn.HeaderText = "Nama Mahasiswa";
+            this.namaMhsDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.namaMhsDataGridViewTextBoxColumn.Name = "namaMhsDataGridViewTextBoxColumn";
+            this.namaMhsDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // alamatMhsDataGridViewTextBoxColumn
+            // 
+            this.alamatMhsDataGridViewTextBoxColumn.DataPropertyName = "AlamatMhs";
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.IndianRed;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.DarkOliveGreen;
+            this.alamatMhsDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle8;
+            this.alamatMhsDataGridViewTextBoxColumn.HeaderText = "Alamat Mahasiswa";
+            this.alamatMhsDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.alamatMhsDataGridViewTextBoxColumn.Name = "alamatMhsDataGridViewTextBoxColumn";
+            this.alamatMhsDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // sexDataGridViewTextBoxColumn
+            // 
+            this.sexDataGridViewTextBoxColumn.DataPropertyName = "Sex";
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.Gray;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.sexDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle9;
+            this.sexDataGridViewTextBoxColumn.HeaderText = "Jenis Kelamin";
+            this.sexDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.sexDataGridViewTextBoxColumn.Name = "sexDataGridViewTextBoxColumn";
+            this.sexDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // phoneMhsDataGridViewTextBoxColumn
+            // 
+            this.phoneMhsDataGridViewTextBoxColumn.DataPropertyName = "PhoneMhs";
+            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.DarkSlateGray;
+            this.phoneMhsDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle10;
+            this.phoneMhsDataGridViewTextBoxColumn.HeaderText = "No. Telpon";
+            this.phoneMhsDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.phoneMhsDataGridViewTextBoxColumn.Name = "phoneMhsDataGridViewTextBoxColumn";
+            this.phoneMhsDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // mahasiswaBindingSource1
+            // 
+            this.mahasiswaBindingSource1.DataMember = "Mahasiswa";
+            this.mahasiswaBindingSource1.DataSource = this.prodiTIDataSet;
+            // 
+            // prodiTIDataSet
+            // 
+            this.prodiTIDataSet.DataSetName = "ProdiTIDataSet";
+            this.prodiTIDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // label2
             // 
@@ -92,74 +158,9 @@ namespace Exercise_PABD
             this.mahasiswaBindingSource.DataMember = "Mahasiswa";
             this.mahasiswaBindingSource.DataSource = this.prodiTIDataSet;
             // 
-            // prodiTIDataSet
-            // 
-            this.prodiTIDataSet.DataSetName = "ProdiTIDataSet";
-            this.prodiTIDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // mahasiswaTableAdapter
             // 
             this.mahasiswaTableAdapter.ClearBeforeFill = true;
-            // 
-            // mahasiswaBindingSource1
-            // 
-            this.mahasiswaBindingSource1.DataMember = "Mahasiswa";
-            this.mahasiswaBindingSource1.DataSource = this.prodiTIDataSet;
-            // 
-            // nIMDataGridViewTextBoxColumn
-            // 
-            this.nIMDataGridViewTextBoxColumn.DataPropertyName = "NIM";
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Black;
-            this.nIMDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle1;
-            this.nIMDataGridViewTextBoxColumn.HeaderText = "No. Mahasiswa";
-            this.nIMDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.nIMDataGridViewTextBoxColumn.Name = "nIMDataGridViewTextBoxColumn";
-            this.nIMDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // namaMhsDataGridViewTextBoxColumn
-            // 
-            this.namaMhsDataGridViewTextBoxColumn.DataPropertyName = "NamaMhs";
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Black;
-            this.namaMhsDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle2;
-            this.namaMhsDataGridViewTextBoxColumn.HeaderText = "Nama Mahasiswa";
-            this.namaMhsDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.namaMhsDataGridViewTextBoxColumn.Name = "namaMhsDataGridViewTextBoxColumn";
-            this.namaMhsDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // alamatMhsDataGridViewTextBoxColumn
-            // 
-            this.alamatMhsDataGridViewTextBoxColumn.DataPropertyName = "AlamatMhs";
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.IndianRed;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.DarkOliveGreen;
-            this.alamatMhsDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle3;
-            this.alamatMhsDataGridViewTextBoxColumn.HeaderText = "Alamat Mahasiswa";
-            this.alamatMhsDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.alamatMhsDataGridViewTextBoxColumn.Name = "alamatMhsDataGridViewTextBoxColumn";
-            this.alamatMhsDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // sexDataGridViewTextBoxColumn
-            // 
-            this.sexDataGridViewTextBoxColumn.DataPropertyName = "Sex";
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Gray;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.sexDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle4;
-            this.sexDataGridViewTextBoxColumn.HeaderText = "Jenis Kelamin";
-            this.sexDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.sexDataGridViewTextBoxColumn.Name = "sexDataGridViewTextBoxColumn";
-            this.sexDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // phoneMhsDataGridViewTextBoxColumn
-            // 
-            this.phoneMhsDataGridViewTextBoxColumn.DataPropertyName = "PhoneMhs";
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.DarkSlateGray;
-            this.phoneMhsDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle5;
-            this.phoneMhsDataGridViewTextBoxColumn.HeaderText = "No. Telpon";
-            this.phoneMhsDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.phoneMhsDataGridViewTextBoxColumn.Name = "phoneMhsDataGridViewTextBoxColumn";
-            this.phoneMhsDataGridViewTextBoxColumn.Width = 125;
             // 
             // pictureBox2
             // 
@@ -193,12 +194,13 @@ namespace Exercise_PABD
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.dataGridView1);
             this.Name = "Form3";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form3";
             this.Load += new System.EventHandler(this.Form3_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mahasiswaBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.prodiTIDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.mahasiswaBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.prodiTIDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mahasiswaBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

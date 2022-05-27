@@ -175,6 +175,7 @@ namespace Exercise_PABD
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.pictureBox2);
             this.Name = "Form5";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form5";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -187,15 +188,15 @@ namespace Exercise_PABD
 
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.PictureBox pictureBox2;
+        public System.Windows.Forms.Label label6;
+        public System.Windows.Forms.Label label10;
+        public System.Windows.Forms.Label label9;
+        public System.Windows.Forms.Label label7;
+        public System.Windows.Forms.Label label8;
     }
 }
