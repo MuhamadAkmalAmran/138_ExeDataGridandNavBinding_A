@@ -36,8 +36,16 @@ namespace Exercise_PABD
         {
             if (textUsername.Text == "User" && textPassword.Text == "user")
             {
-                new Form2().Show();
-                this.Hide();
+                if (checkBox1.Checked)
+                {
+                    new Form2().Show();
+                    this.Hide();
+                }
+                else
+                {
+                    MessageBox.Show("Please check Term and Condition");
+                }
+                
             }
             else
             {
